@@ -1,42 +1,88 @@
-// 1) Create an array with 5 different strings.
-// Log the length of your array, and log the length
-// of each of the strings in your array.
-// When done, reverse your array: permanently or temporarily
-// - your choice.
+var allQuestions = [
+	{
+		question: "",
+		imageQuestion: "images/golden-state-question.png",
+		imageAnswer: "images/golden-state-answer.png",
+		answer: ["Golden State Warriors", "Golden State", "Warriors"]
+	},
+	{
+		question: "",
+		imageQuestion: "images/golden-state-question.png",
+		imageAnswer: "images/golden-state-answer.png",
+		answer: ["Golden State Warriors", "Golden State", "Warriors"]
+	},
+	{
+		question: "",
+		imageQuestion: "images/golden-state-question.png",
+		imageAnswer: "images/golden-state-answer.png",
+		answer: ["Golden State Warriors", "Golden State", "Warriors"]
+	},
+	{
+		question: "",
+		imageQuestion: "images/golden-state-question.png",
+		imageAnswer: "images/golden-state-answer.png",
+		answer: ["Golden State Warriors", "Golden State", "Warriors"]
+	},
+	{
+		question: "",
+		imageQuestion: "images/golden-state-question.png",
+		imageAnswer: "images/golden-state-answer.png",
+		answer: ["Golden State Warriors", "Golden State", "Warriors"]
+	},
+	{
+		question: "",
+		imageQuestion: "images/golden-state-question.png",
+		imageAnswer: "images/golden-state-answer.png",
+		answer: ["Golden State Warriors", "Golden State", "Warriors"]
+	}
+]
 
-// var array = ["uno", "dos", "tres", "cuatro", "cinco"];
+var div = document.createElement("div");
 
-// console.log(array.length);
+for (i = 0; i < allQuestions.length; i++) {
+	var question = document.createElement("h2");
+	var image = document.createElement("img");
+	var input = document.createElement("input");
+	var questionText = document.createTextNode("_____");
+	image.src = allQuestions[i].imageQuestion;
+	var littleDiv = document.createElement("div");
+	var body = document.getElementById("body");
 
-// for (i = 0; i < array.length; i++) {
-// 	console.log(array[i]);
-// }
+	image.className = "img-responsive";
+	image.className = "image";
+	littleDiv.className = "col-md-4";
+	question.className = "text-center";
+	input.className = "form-control";
 
-// console.log(array.reverse());
+	question.appendChild(questionText);
+
+	littleDiv.appendChild(question);
+	littleDiv.appendChild(image);
+	littleDiv.appendChild(input);
+
+	div.appendChild(littleDiv);
+
+	body.appendChild(div);
+}
 
 
-// 2) Create an array of at least 5 numbers.
-// Sort the array numerically, in ascending order
-// (smallest to biggest). Then sort it in descending order.
-
-// var numbers = [50, 10, 30, 40, 80];
-
-// console.log(numbers.sort());
-
-// console.log(numbers.sort().reverse());
 
 
-// 3) Create an array of strings. Add two new strings to the array,
-// then take one away. Console log the final array - it should have
-// four strings.
 
-var strings = ["tengo hambre", "tengo comida", "tengo dinero"];
 
-var pushString = strings.push("tengo todo");
 
-var pushingMore = strings.push("tengo mas");
 
-var takingAway = strings.pop();
 
-console.log(strings);
+
+
+
+
+
+
+
+
+
+
+
+
 
