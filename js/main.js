@@ -79,12 +79,6 @@ for (i = 0; i < allQuestions.length; i++) {
 
 // function for when person clicks button
 function quizNow() {
-	// var correct = 0;
-	// var incorrect = 0;
-	// var correct = document.createElement("p");
-	// var incorrect = document.createElement("p");
-	// correct = document.createTextNode("Correct: ");
-	// incorrect = document.createTextNode("incorrect: ");
 
 	// for loop will iterate over variable allQuestions
 	for (j = 0; j < allQuestions.length; j++) {
@@ -102,11 +96,15 @@ function quizNow() {
 			// image will show correct team logo
 			changeImage.src = allQuestions[j].imageShow;
 			// title above image will change to correct answer
+			changeTitle.className = "green-text";
 			changeTitle.innerHTML = allQuestions[j].answer.toUpperCase();
+			
 			// adds 1 point to "correct" per each correct answer
 		} else {
 		// 	// title above image will 
+			changeTitle.className = "red-text";
 			changeTitle.innerHTML = "Try again";
+			
 		// 	// adds 1 point to "incorrect" per each incorrect answer
 		}
 	} 
